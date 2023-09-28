@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Fundamentals-App</string>
+    <string name="name_value">Teclea un Nombre</string>
+    <string name="age_value">Teclea tu edad</string>
+    <string name="accept_value">Aceptar</string>
+    <string name="label_for_name">Ingresa tu nombre:</string>
+    <string name="label_for_age">Ingresa tu edad:</string>
+    <string name="action_salir">Salir</string>
+</resources>

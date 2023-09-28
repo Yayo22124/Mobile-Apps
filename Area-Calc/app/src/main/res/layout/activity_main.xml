@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#f1f5f9">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#64748b"/>
+
+
+    <TextView
+        android:id="@+id/header_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/header_value"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/toolbar"
+        android:textColor="#1d4ed8"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/header_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Haziel Ortiz Ramirez 220087"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/header_title"
+        android:textColor="#075985"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/img_triangle"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/header_subtitle"
+        android:src="@drawable/triangle"
+        android:contentDescription="@string/description_image_triangle" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/img_triangle"
+        android:text="Resultado: "
+        android:textColor="@color/white"
+        android:background="#3b82f6"
+        android:padding="12dp"
+        android:textColorHint="@color/white"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp"
+        android:textSize="21sp"/>
+
+    <TextView
+        android:id="@+id/label_for_base"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingrese la Base:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/result"
+        android:textColor="#93c5fd"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/etBase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="25dp"
+        android:layout_below="@id/label_for_base"
+        android:inputType="number"
+        android:background="@drawable/rounded_edittext"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textColorHint="#f1f5f9"/>
+
+    <TextView
+        android:id="@+id/label_for_altura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingrese la Altura:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/etBase"
+        android:textColor="#93c5fd"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/etAltura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="25dp"
+        android:layout_below="@id/label_for_altura"
+        android:inputType="number"
+        android:background="@drawable/rounded_edittext"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textColorHint="#f1f5f9"/>
+    
+    <Button
+        android:id="@+id/btnCalc"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etAltura"
+        android:layout_centerHorizontal="true"
+        android:text="Calcular"
+        android:textStyle="bold"
+        android:backgroundTint="#1d4ed8"/>
+
+
+</RelativeLayout>

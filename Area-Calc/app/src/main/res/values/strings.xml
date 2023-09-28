@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Area Calculator</string>
+    <string name="header_value">Área de un Triángulo</string>
+    <string name="description_image_triangle">triangle</string>
+</resources>
