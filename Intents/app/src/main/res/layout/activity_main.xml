@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#8D99AE">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#2B2D42"/>
+
+    <TextView
+        android:id="@+id/header_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="#EDF2F4"
+        android:textStyle="bold"
+        android:textSize="28sp"
+        android:text="Toma tu Foto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginBottom="20dp"/>
+    
+    <ImageView
+        android:id="@+id/iv_picture"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_below="@+id/header_title"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="Tu imágen"
+        android:layout_marginBottom="30dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_marginBottom="25dp"
+        android:layout_marginHorizontal="60dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txt_next"
+        android:background="#EE8B98"
+        android:layout_below="@id/iv_picture"/>
+
+    <Button
+        android:id="@+id/btn_take_picture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="100dp"
+        android:layout_below="@id/txt_next"
+        android:text="Capturar"
+        android:backgroundTint="#EF233C"
+        android:layout_marginBottom="15dp"/>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="100dp"
+        android:layout_below="@id/btn_take_picture"
+        android:text="Siguiente"
+        android:backgroundTint="#D80032"/>
+
+</RelativeLayout>
